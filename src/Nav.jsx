@@ -3,17 +3,14 @@ import { Link } from 'react-router-dom';
 import styled from '@emotion/styled';
 
 const StyledNav = styled.nav`
-position: relative;
   display : flex;
   flex-direction:row;
   justify-content: space-between;
   align-items: center;
-  margin:30px;
-  padding: 5px;
+  padding: 50px 40px 10px 40px;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  font-size: 20px;
-   z-index: 100; 
+  font-size: 20px; 
 
   @media (max-width: 768px) {
     margin: 0;
@@ -24,7 +21,7 @@ position: relative;
     ${props =>
       props.isOpen &&
       `
-      position: fixed; /* Fixed position */
+      position: fixed; 
       top: 0;
       left: 0;
       right: 0;
@@ -42,13 +39,13 @@ const LogoContainer = styled(Link)`
   align-items: center;
   border: none;
   @media (max-width: 768px) {
-  
-    width: 25%;   
+    height: 90%;
+    width: 30%;   
    }
 `
 const Logo = styled.img`
   height: 100%;
-  width: auto;
+  width: 100%;
   @media (max-width: 768px) {
     height: 100%;
     width: 100%;   
@@ -115,10 +112,12 @@ const OpenMenu = styled.div`
   width:50%;
   height:50%;
 
+  
+
   @media (max-width: 768px) {
     display: flex;
     width: 100%;
-    height: 5%;
+    height: 7%;
     flex-direction: row; 
     margin: 0; 
     padding: 5px 20px;
